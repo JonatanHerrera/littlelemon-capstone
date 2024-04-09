@@ -2,7 +2,6 @@
     background-color: #495E57;
     height: 310px;
     display: flex  ;
-    
 }
 
 .heroImage {
@@ -12,5 +11,4 @@
     box-shadow: 3px 3px 15px rgba(0,0,0,.2);
     margin-left: 7em;
     margin-top: 6em;
-    
 }
