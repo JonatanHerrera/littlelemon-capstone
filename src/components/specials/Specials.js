@@ -11,6 +11,8 @@ function Specials() {
         </div>
         <div className='cards-specials'>
             <Card/>
+            <Card/>
+            <Card/>
         </div>
     </div>
   )

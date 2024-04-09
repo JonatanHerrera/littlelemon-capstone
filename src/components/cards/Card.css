@@ -1,0 +1,47 @@
+.cardImage {
+    width: 320px;
+    height: 190px;
+    border-radius: 16px 16px 0 0; 
+}
+
+.card {
+    max-width: 320px;
+    height: 470px;
+    box-shadow: 3px 3px 15px rgba(0,0,0,.2);
+    border-radius: 16px 16px 0 0; 
+    background-color: #EDEFEE;
+}
+
+.cardHeader {
+    display: inline-flex;    
+    margin: 20px;
+    margin-bottom:5px ;
+    align-content: center;
+}
+.cardText {
+    width: 280px;       
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    font-size: 14px;
+
+}
+
+.cardHeader h3 {
+    align-content: center;
+    color: #EE9972;
+    margin-left:40px ;
+}
+.cardHeader h1 {
+    align-content: center;
+    font-family: 'Markazi Text';    
+}
+
+.orderDeliveryButtom {
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+a img {
+    margin-left: 10px;
+}
