@@ -4,7 +4,7 @@ import CustomerCard from '../customerCard/CustomerCard'
 
 const CustomerSay = () => {
   return (
-    <div className='custometSayContainer'>      
+    <div className='custometSayContainer'>
       <CustomerCard/>
       <CustomerCard/>
       <CustomerCard/>
