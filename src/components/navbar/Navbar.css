@@ -35,7 +35,7 @@ nav {
   .Logo1{
     width: 210px;
     height: 100;
-    margin-left: 50%;
+    margin-left: 45%;
   }
 
   @media only screen and (max-width: 768px) {

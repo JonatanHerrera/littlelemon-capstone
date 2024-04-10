@@ -1,58 +1,57 @@
 .hero-container {
-    background-color: #495E57;
-    height: 310px;
-    display: flex  ;
+  background-color: #495e57;
+  height: 310px;
+  display: flex;
 }
 
 .heroImage {
-    height: 328px;
-    width: 330px;
-    border-radius: 16px;
-    box-shadow: 3px 3px 15px rgba(0,0,0,.2);
-    margin-left: 20%;
-    margin-top: 10%;
+  height: 328px;
+  width: 330px;
+  border-radius: 16px;
+  box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.2);
+  margin-left: 20%;
+  margin-top: 10%;
 }
 
-.titleName{
-font-family: Markazi Text;
-font-size: 48px;
-color: #F4CE14;
-margin-left: 40%;
-margin-top: 2%;
-margin-bottom: 2%;
-
+.titleName {
+  font-family: Markazi Text;
+  font-size: 48px;
+  color: #f4ce14;
+  margin-left: 35%;
+  margin-top: 2%;
+  margin-bottom: 2%;
 }
 
-.subTitleName{
-font-family: Markazi Text;
-font-size: 30px;
-color: #ffffff;
-margin-left: 40%;
-margin-top: 0%;
+.subTitleName {
+  font-family: Markazi Text;
+  font-size: 30px;
+  color: #ffffff;
+  margin-left: 35%;
+  margin-top: 0%;
 }
 
-.p-n{
-    font-family: Markazi Text;
-    font-size: 14px;
-    color: #ffffff;
-    margin-left: 40%;
-    width: 60%;
-
+.p-n {
+  font-family: Markazi Text;
+  font-size: 14px;
+  color: #ffffff;
+  margin-left: 35%;
+  width: 60%;
 }
 
-.actionBut{
-    height: 38px;
-    width: 186px;
-    border-radius: 16px;
-    background-color: #F4CE14;
-    font-weight: bold;
+.actionBut {
+  height: 38px;
+  width: 186px;
+  border-radius: 16px;
+  background-color: #f4ce14;
+  font-weight: bold;
 }
 
-.reserveBut{
-    margin-top: 5%;
-    margin-left: 40%;
+.reserveBut {
+  margin-top: 5%;
+  margin-left: 35%;
 }
 
-.heroDiv1 , .heroDiv2 {
-    width: 50%;
+.heroDiv1,
+.heroDiv2 {
+  width: 50%;
 }

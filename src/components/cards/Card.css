@@ -1,48 +1,47 @@
 .cardImage {
-    width: 250px;
-    height: 150px;
-    border-radius: 16px 16px 0 0; 
+  width: 250px;
+  height: 150px;
+  border-radius: 16px 16px 0 0;
 }
 
 .card {
-    max-width: 250px;
-    height: 430px;
-    box-shadow: 3px 3px 15px rgba(0,0,0,.2);
-    border-radius: 16px 16px 0 0; 
-    background-color: #EDEFEE;
+  max-width: 250px;
+  height: 430px;
+  box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 16px 16px 0 0;
+  background-color: #edefee;
 }
 
 .cardHeader {
-    display: inline-flex;    
-    margin: 20px;
-    margin-bottom:5px ;
-    align-content: center;
+  display: inline-flex;
+  margin: 20px;
+  margin-bottom: 5px;
+  align-content: center;
 }
 .cardText {
-    width: 220px;       
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 0px;
-    font-size: 15px;
-
+  width: 220px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+  font-size: 15px;
 }
 
 .cardHeader h3 {
-    align-content: center;
-    color: #EE9972;
-    margin-left:70px ;
+  align-content: center;
+  color: #ee9972;
+  margin-left: 70px;
 }
 .cardHeader h1 {
-    align-content: center;
-    font-family: 'Markazi Text';   
-    font-size: 20px; 
+  align-content: center;
+  font-family: "Markazi Text";
+  font-size: 20px;
 }
 
 .orderDeliveryButtom {
-    margin-top: 40px;
-    margin-left: 20px;
+  margin-top: 40px;
+  margin-left: 20px;
 }
 
 a img {
-    margin-left: 10px;
+  margin-left: 10px;
 }

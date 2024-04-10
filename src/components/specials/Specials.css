@@ -1,31 +1,30 @@
 .cards-specials {
-    display: flex;
-    gap: 5%;
-    margin-top:30px;
-    justify-content: center;
-    padding-left: 4%;
+  display: flex;
+  gap: 6%;
+  margin-top: 30px;
+  justify-content: center;
 }
 
 .specials-container {
-    margin-top:140px;
-    width: 100%;
+  margin-top: 140px;
+  width: 100%;
 }
 
-.header-specials{
-    display: flex;
-    align-items: center;
-    width: 100%;
+.header-specials {
+  display: flex;
+  align-items: center;
+  width: 100%;
 }
 .specialTitle-container {
-    width: 50%;
+  width: 50%;
 }
-.specialTitle-container  h1 {
-    margin-left: 40%;
-    font-size: 40px;
+.specialTitle-container h1 {
+  margin-left: 35%;
+  font-size: 40px;
 }
 .specialButtomContainer {
-    width: 50%;
+  width: 50%;
 }
 .specialButtomContainer button {
-    margin-left: 32%;
+  margin-left: 40%;
 }
