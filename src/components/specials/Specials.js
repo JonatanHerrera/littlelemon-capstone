@@ -6,8 +6,12 @@ function Specials() {
   return (
     <div className='specials-container'>
         <div className='header-specials'>
-            <div><h1>This Weeks Specials</h1></div>
-            <div><button>Online Menu</button></div>
+            <div className='specialTitle-container'>
+              <h1>This Weeks Specials</h1>
+            </div>
+            <div className='specialButtomContainer'>
+              <button className='actionBut'>Online Menu</button>
+            </div>
         </div>
         <div className='cards-specials'>
             <Card/>

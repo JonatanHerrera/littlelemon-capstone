@@ -1,16 +1,31 @@
 .cards-specials {
     display: flex;
-    gap: 60px;
+    gap: 5%;
     margin-top:30px;
     justify-content: center;
+    padding-left: 4%;
 }
 
 .specials-container {
-    margin-top:200px;
+    margin-top:140px;
+    width: 100%;
 }
 
 .header-specials{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    width: 100%;
+}
+.specialTitle-container {
+    width: 50%;
+}
+.specialTitle-container  h1 {
+    margin-left: 40%;
+    font-size: 40px;
+}
+.specialButtomContainer {
+    width: 50%;
+}
+.specialButtomContainer button {
+    margin-left: 32%;
 }

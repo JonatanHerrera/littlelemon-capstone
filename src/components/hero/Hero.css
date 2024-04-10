@@ -9,6 +9,50 @@
     width: 330px;
     border-radius: 16px;
     box-shadow: 3px 3px 15px rgba(0,0,0,.2);
-    margin-left: 7em;
-    margin-top: 6em;
+    margin-left: 20%;
+    margin-top: 10%;
+}
+
+.titleName{
+font-family: Markazi Text;
+font-size: 48px;
+color: #F4CE14;
+margin-left: 40%;
+margin-top: 2%;
+margin-bottom: 2%;
+
+}
+
+.subTitleName{
+font-family: Markazi Text;
+font-size: 30px;
+color: #ffffff;
+margin-left: 40%;
+margin-top: 0%;
+}
+
+.p-n{
+    font-family: Markazi Text;
+    font-size: 14px;
+    color: #ffffff;
+    margin-left: 40%;
+    width: 60%;
+
+}
+
+.actionBut{
+    height: 38px;
+    width: 186px;
+    border-radius: 16px;
+    background-color: #F4CE14;
+    font-weight: bold;
+}
+
+.reserveBut{
+    margin-top: 5%;
+    margin-left: 40%;
+}
+
+.heroDiv1 , .heroDiv2 {
+    width: 50%;
 }
