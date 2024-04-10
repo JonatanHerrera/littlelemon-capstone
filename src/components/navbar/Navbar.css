@@ -1,53 +1,55 @@
 /* Estilos para la barra de navegación */
 nav {
-    background-color: #ffffff;
-    display:  flex;
-    justify-content: center;
-  }
-  /* Estilos para el logotipo */
-  .logo {
-    margin-top: 20px;
-    margin-right: 30px;
-    width: 40%;
-
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+}
+/* Estilos para el logotipo */
+.logo {
+  margin-top: 20px;
+  margin-right: 30px;
+  width: 40%;
 }
 .menu {
   width: 60%;
 }
 
-  ul {
-    margin-top: 40px;
-    list-style-type: none; /* Quita los estilos de lista */
-    padding: 0; /* Elimina el espacio interno */    
-  }
-  li {
-    display: inline;
-    margin-right: 20px;
-    margin-left: 20px;
-  }
-  a {
-    font-family: 'Markazi Text';
-    font-weight: bold;
-    font-size: 24;
-    color: rgb(0, 0, 0); /* Color del texto */
-    text-decoration: none; /* Quita la decoración de los enlaces */
-  }
-  .Logo1{
-    width: 210px;
-    height: 100;
-    margin-left: 45%;
-  }
+nav ul {
+  margin-top: 40px;
+  list-style-type: none; /* Quita los estilos de lista */
+  padding: 0; /* Elimina el espacio interno */
+}
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+nav ul li a {
+  font-weight: bold;
+}
 
-  @media only screen and (max-width: 768px) {
-    li {
-      display: flex ;
-      margin-right: 5px;
-      margin-top: 20px;
-    }
-    nav {
-      flex-wrap: wrap;
-    }
-    .Logo1 {
-      display: none;
-    }
+a {
+  font-family: "Markazi Text";
+  font-size: 24;
+  color: rgb(0, 0, 0); /* Color del texto */
+  text-decoration: none; /* Quita la decoración de los enlaces */
+}
+.Logo1 {
+  width: 210px;
+  height: 100;
+  margin-left: 45%;
+}
+
+@media only screen and (max-width: 768px) {
+  li {
+    display: flex;
+    margin-right: 5px;
+    margin-top: 20px;
   }
+  nav {
+    flex-wrap: wrap;
+  }
+  .Logo1 {
+    display: none;
+  }
+}

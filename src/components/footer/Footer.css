@@ -1,0 +1,26 @@
+footer {
+  width: 100%;
+  display: flex;
+}
+
+.footerDiv {
+  width: 20%;
+  align-items: center;
+  height: 200px;
+}
+
+.footerLogo {
+  display: flex;
+  width: 30%;
+  justify-content: center   ;
+}
+.aboutList {
+  display: grid;
+  list-style-type: none;
+  padding: 0;
+  margin: 0%;
+}
+.Logo2{
+    width: 150px;
+    margin-left: 45%;
+}
