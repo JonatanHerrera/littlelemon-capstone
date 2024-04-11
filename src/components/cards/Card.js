@@ -1,22 +1,20 @@
 import React from "react";
 import "./Card.css";
 
-function Card() {
+function Card({name, description, image, price}) {  
   return (
     <div className="card">
       <div>
-        <img className="cardImage" src="/greek salad.jpg" />
+        <img className="cardImage" src={image} />
       </div>
       <div>
         <div className="cardHeader">
-          <h1>Greek Salad</h1>
-          <h3>$12.99</h3>
+          <h1>{name}</h1>
+          <h3>${price}</h3>
         </div>
         <div className="cardBodyContainer">
           <p className="cardText">
-            Contrary to popular belief, Lorem Ipsum is not simply random text.
-            It has roots in a piece of classical Latin literature from 45 BC,
-            making it over 2000 years old.
+            {description}
           </p>
           <div className="orderDeliveryButtom">
             <a >
