@@ -1,23 +1,18 @@
-import React from 'react'
-import  './CustomerCard.css'
-import StarIcon from '@mui/icons-material/Star';
-import StarBorderOutlinedIcon from '@mui/icons-material/StarBorderOutlined';
-const CustomerCard = () => {
+import React from "react";
+import "./CustomerCard.css";
+import Stars from "./Stars";
+
+const CustomerCard = ({ name, image, stars }) => {
   return (
-    <div className='customerCardContainer'>
-      <h1>Title</h1>
-      <img src='/5919211.jpg'/>
+    <div className="customerCardContainer">
+      <h1>{name}</h1>
+      <img src={image} alt={name}/>
       <h3>Rating</h3>
       <div>
-        <StarIcon />
-        <StarIcon />
-        <StarIcon />
-        <StarBorderOutlinedIcon/>
-        <StarBorderOutlinedIcon/>
+        <Stars nStarts={stars} maxStars={5} />
       </div>
-      
     </div>
-  )
-}
+  );
+};
 
-export default CustomerCard
+export default CustomerCard;

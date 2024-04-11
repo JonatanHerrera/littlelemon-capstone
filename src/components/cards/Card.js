@@ -5,7 +5,7 @@ function Card({ name, description, image, price }) {
   return (
     <div className="card">
       <div>
-        <img className="cardImage" src={image} />
+        <img className="cardImage" src={image}  alt={name} />
       </div>
       <div>
         <div className="cardHeader">
@@ -13,14 +13,14 @@ function Card({ name, description, image, price }) {
             <h1>{name}</h1>
           </div>
           <div className="CardPrice">
-            <h3>${price}</h3> 
+            <h3>${price}</h3>
           </div>
         </div>
         <div className="cardBodyContainer">
           <p className="cardText">{description}</p>
           <div className="orderDeliveryButtom">
-            <a>
-              Order a delivery <img src="/Dish icon.svg" />
+            <a href="/">
+              Order a delivery <img src="/Dish icon.svg" alt="icon" />
             </a>
           </div>
         </div>
