@@ -1,7 +1,7 @@
 import React from "react";
 import "./Card.css";
 
-function Card({name, description, image, price}) {  
+function Card({ name, description, image, price }) {
   return (
     <div className="card">
       <div>
@@ -9,15 +9,17 @@ function Card({name, description, image, price}) {
       </div>
       <div>
         <div className="cardHeader">
-          <h1>{name}</h1>
-          <h3>${price}</h3>
+          <div className="CardTitle">
+            <h1>{name}</h1>
+          </div>
+          <div className="CardPrice">
+            <h3>${price}</h3> 
+          </div>
         </div>
         <div className="cardBodyContainer">
-          <p className="cardText">
-            {description}
-          </p>
+          <p className="cardText">{description}</p>
           <div className="orderDeliveryButtom">
-            <a >
+            <a>
               Order a delivery <img src="/Dish icon.svg" />
             </a>
           </div>
