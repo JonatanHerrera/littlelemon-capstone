@@ -18,6 +18,8 @@ nav ul {
   margin-top: 40px;
   list-style-type: none; /* Quita los estilos de lista */
   padding: 0; /* Elimina el espacio interno */
+  display: flex;
+  flex-wrap: wrap;
 }
 nav ul li {
   display: inline;
@@ -46,9 +48,7 @@ a {
     margin-right: 5px;
     margin-top: 20px;
   }
-  nav {
-    flex-wrap: wrap;
-  }
+  
   .Logo1 {
     display: none;
   }
