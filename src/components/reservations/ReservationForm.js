@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import "./ReservationForm.css";
+import ReservationModal from "./reservationModal/ReservationModal";
 
 const ReservationForm = () => {
   const today = new Date().toISOString().split("T")[0];
@@ -10,10 +11,23 @@ const ReservationForm = () => {
     guests: "",
     occasion: "",
   });
+  const [modal, setModal] = useState(false);
 
+  const toggleModal = () => {
+    setModal(!modal);
+  };
+
+  const isAnyFieldEmpty = () => {
+    return !(
+      formData.date &&
+      formData.time &&
+      formData.guests &&
+      formData.occasion
+    );
+  };
   const handleSubmit = (event) => {
     event.preventDefault();
-
+    toggleModal();
     console.log(formData);
   };
 
@@ -26,6 +40,7 @@ const ReservationForm = () => {
   };
   return (
     <div className="form-container">
+      {modal && <ReservationModal toggleModal={toggleModal} />}
       <form onSubmit={handleSubmit}>
         <div className="form-input">
           <label htmlFor="date">Booking Date</label>
@@ -77,7 +92,16 @@ const ReservationForm = () => {
           </select>
         </div>
         <div className="form-input">
-          <button className="actionBut bookinBut" type="submit">Reserve</button>
+          <p hidden={!isAnyFieldEmpty()}>
+            Please complete all the values to book your table
+          </p>
+          <button
+            className="actionBut bookinBut"
+            type="submit"
+            disabled={isAnyFieldEmpty()}
+          >
+            Reserve
+          </button>
         </div>
       </form>
     </div>
