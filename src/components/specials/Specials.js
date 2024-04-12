@@ -1,6 +1,7 @@
 import React from "react";
 import "./Specials.css";
 import Card from "../cards/Card";
+import { Link } from "react-router-dom";
 
 function Specials({ specials }) {
   return (
@@ -10,7 +11,9 @@ function Specials({ specials }) {
           <h1>This Weeks Specials</h1>
         </div>
         <div className="specialButtomContainer">
-          <button className="actionBut">Online Menu</button>
+          <Link to='/OrderOnline'>
+            <button button className="actionBut">Online Menu</button>
+          </Link>
         </div>
       </div>
       <div className="cards-specials">

@@ -1,10 +1,13 @@
 import React from "react";
 import Footer from "../footer/Footer";
-
+import ReservationForm from "./ReservationForm";
+import "./Reservations.css";
 const Reservations = () => {
   return (
     <>
-      <div>This is a Reservations components</div>
+      <div className="reservations-container">
+        <ReservationForm />
+      </div>
       <Footer />
     </>
   );

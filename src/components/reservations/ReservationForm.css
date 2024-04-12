@@ -1,0 +1,41 @@
+.form-input {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.form-container {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  width: 30%;
+}
+
+.form-container label {
+  margin: 2%;
+  font-family: "Markazi Text";
+  font-weight: bold;
+  color: #fff;
+  font-size: large;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.bookinBut {
+    margin-top: 10px;
+    width: 100%;
+}

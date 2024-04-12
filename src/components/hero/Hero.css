@@ -42,9 +42,23 @@
   height: 38px;
   width: 186px;
   border-radius: 16px;
-  background-color: #f4ce14;
   font-weight: bold;
+  padding: 10px 20px;
+  background-color: #f4ce14;
+  color: #000;
+  border: none;
+  cursor: pointer;
 }
+
+.actionBut:hover {
+  background-color: #f4cf14c9;
+}
+
+.actionBut:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
 
 .reserveBut {
   margin-top: 5%;
