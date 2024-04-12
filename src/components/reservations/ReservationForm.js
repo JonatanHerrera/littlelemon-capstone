@@ -13,6 +13,14 @@ const ReservationForm = () => {
   });
   const [modal, setModal] = useState(false);
 
+  const resetForm = () => {
+    setFormData({
+      date: "",
+      time: "",
+      guests: "",
+      occasion: "",
+    });
+  };
   const toggleModal = () => {
     setModal(!modal);
   };
@@ -28,7 +36,7 @@ const ReservationForm = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
     toggleModal();
-    console.log(formData);
+    resetForm();
   };
 
   const handleChange = (event) => {
@@ -51,11 +59,12 @@ const ReservationForm = () => {
             min={today}
             required
             onChange={handleChange}
+            value={formData.date}
           />
         </div>
         <div className="form-input">
           <label htmlFor="book-time">Choose time</label>
-          <select id="book-time " name="time" onChange={handleChange} required>
+          <select id="book-time " name="time" onChange={handleChange} required  value={formData.time}>
             <option value="">Select an time</option>
             <option value="17:00">17:00</option>
             <option value="18:00">18:00</option>
@@ -74,6 +83,7 @@ const ReservationForm = () => {
             min={1}
             max={20}
             onChange={handleChange}
+            value={formData.guests}
             required
           />
         </div>
@@ -83,6 +93,7 @@ const ReservationForm = () => {
             id="occasion"
             name="occasion"
             onChange={handleChange}
+            value={formData.occasion}
             required
           >
             <option value="">Select an occasion</option>
