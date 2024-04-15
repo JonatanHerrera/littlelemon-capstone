@@ -3,15 +3,35 @@ import { useState } from "react";
 import "./ReservationForm.css";
 import ReservationModal from "./reservationModal/ReservationModal";
 
-const ReservationForm = () => {
+const ReservationForm = ({ avalibleTimes, setAvalibleTimes }) => {
+  const avalibleTimesChilf = [...avalibleTimes];
+
+  const getAvalibleTimes = () => {
+    const filteredTimes = avalibleTimesChilf.filter(
+      (time) => time.avalible == true
+    );
+    return filteredTimes;
+  };
+
   const today = new Date().toISOString().split("T")[0];
   const [formData, setFormData] = useState({
     date: "",
     time: "",
-    guests: "",
+    guests: "1",
     occasion: "",
   });
   const [modal, setModal] = useState(false);
+
+  const updateAvalibleTimeState = (actualValue) => {
+    const updatedTimes = avalibleTimesChilf.map((time) => {
+      if (time.value === actualValue) {
+        return { ...time, avalible: false };
+      }
+      return time;
+    });
+
+    setAvalibleTimes(updatedTimes);
+  };
 
   const resetForm = () => {
     setFormData({
@@ -35,6 +55,7 @@ const ReservationForm = () => {
   };
   const handleSubmit = (event) => {
     event.preventDefault();
+    updateAvalibleTimeState(formData.time);
     toggleModal();
     resetForm();
   };
@@ -64,20 +85,27 @@ const ReservationForm = () => {
         </div>
         <div className="form-input">
           <label htmlFor="book-time">Choose time</label>
-          <select id="book-time " name="time" onChange={handleChange} required  value={formData.time}>
+          <select
+            id="book-time "
+            name="time"
+            onChange={handleChange}
+            required
+            value={formData.time}
+          >
             <option value="">Select an time</option>
-            <option value="17:00">17:00</option>
-            <option value="18:00">18:00</option>
-            <option value="19:00">19:00</option>
-            <option value="20:00">20:00</option>
-            <option value="21:00">21:00</option>
-            <option value="22:00">22:00</option>
+            {getAvalibleTimes().map((time) => {
+              return (
+                <option key={time.id} value={time.value}>
+                  {time.value}
+                </option>
+              );
+            })}
           </select>
         </div>
         <div className="form-input">
           <label htmlFor="guests">Number of guests</label>
           <input
-            type="number"
+            type="range"
             id="guests"
             name="guests"
             min={1}
@@ -86,6 +114,7 @@ const ReservationForm = () => {
             value={formData.guests}
             required
           />
+          <h1>{formData.guests}</h1>
         </div>
         <div className="form-input">
           <label htmlFor="occasion">Occasion</label>

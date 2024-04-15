@@ -8,7 +8,7 @@ const Stars = ({ maxStars, nStarts }) => {
       {[...Array(maxStars)].map((_, index) => {
         const starValue = index + 1;
         const isYellow = nStarts >= starValue;
-        return <>{isYellow ? <StarIcon /> : <StarBorderOutlinedIcon />}</>;
+        return <>{isYellow ? <StarIcon key={index} /> : <StarBorderOutlinedIcon  key={index} />}</>;
       })}
     </div>
   );
