@@ -8,7 +8,7 @@ const ReservationForm = ({ avalibleTimes, setAvalibleTimes }) => {
 
   const getAvalibleTimes = () => {
     const filteredTimes = avalibleTimesChilf.filter(
-      (time) => time.avalible == true
+      (time) => time.avalible === true
     );
     return filteredTimes;
   };
