@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from "react";
 import "./ReservationForm.css";
 import ReservationModal from "./reservationModal/ReservationModal";
+import { Formik, Form, Field, ErrorMessage } from 'formik';
 
 const ReservationForm = ({ avalibleTimes, setAvalibleTimes }) => {
   const avalibleTimesChilf = [...avalibleTimes];
@@ -44,6 +45,19 @@ const ReservationForm = ({ avalibleTimes, setAvalibleTimes }) => {
   const toggleModal = () => {
     setModal(!modal);
   };
+
+  const validate =  (values)=>{
+const errors  ={};
+      //date: "",
+         //   time: "",
+           // guests: "",
+            //occasion: "",
+
+      if (!values.date){
+        errors.date = 'Date is required';
+      }
+      return errors;
+  }
 
   const isAnyFieldEmpty = () => {
     return !(
